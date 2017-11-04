@@ -1,0 +1,6 @@
+$host_name = "localhost";
+$user = "root";
+$pass = "";
+$db_name = "digitrain";
+
+$conn = mysqli_connect($host_name, $user, $pass, $db_name);

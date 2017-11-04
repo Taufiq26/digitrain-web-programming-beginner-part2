@@ -1,0 +1,8 @@
+if (isset($_POST['keluar'])) {
+    session_destroy();
+    ?>
+    <script>
+        window.location = "login.php";
+    </script>
+    <?php
+}

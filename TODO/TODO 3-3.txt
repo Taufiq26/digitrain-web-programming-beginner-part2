@@ -1,0 +1,15 @@
+<?php while ($s = mysqli_fetch_array($students)) : ?>
+<tbody align="center">
+    <!-- TODO 3.4 - Tampilkan data yang telah diuraikan -->
+    
+
+    <td>
+        <!-- TODO 5.1 - Tambahkan aksi untuk menuju ke halaman edit -->
+
+            || 
+            
+        <!-- TODO 6.1 - Tambahkan aksi untuk menghapus data -->
+        
+    </td>
+</tbody>
+<?php endwhile; ?>

@@ -1,0 +1,25 @@
+if (isset($_POST['masuk'])) {
+    $user = $_POST['username'];
+    $pass = $_POST['password'];
+
+    $sql = "SELECT * FROM login WHERE username='".$user."' AND password='".$pass."' ";
+    $masuk = mysqli_query($conn, $sql);
+    
+    if (mysqli_num_rows($masuk) == 1) {
+        // TODO 8.2 - Mendaftarkan session
+        
+        
+        ?>
+        <script>
+            window.location = "index.php";
+        </script>
+        <?php
+    } else {
+        ?>
+        <script>
+            alert("Kombinasi username dan password tidak cocok");
+            window.location = "login.php";
+        </script>
+        <?php
+    }
+}

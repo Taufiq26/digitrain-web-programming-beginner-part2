@@ -1,0 +1,2 @@
+$sql = "SELECT * FROM students WHERE id=".$_GET['id'];
+$students = mysqli_query($conn, $sql);

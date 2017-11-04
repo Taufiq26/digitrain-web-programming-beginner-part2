@@ -1,0 +1,1 @@
+<a href="edit.php?id=<?=$s['id']?>">Edit</a>

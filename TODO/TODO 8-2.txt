@@ -1,0 +1,1 @@
+$_SESSION['username'] = $_POST['username'];
